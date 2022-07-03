@@ -40,6 +40,7 @@
                                                 <option value="POC">	POC</option>
                                                 <option value="Demo">	Demo</option>
                                                 <option value="Tender">	Tender</option>
+                                                <option value="SOW">	SOW</option>
                                         </select>
                                     </div>
                                 </div>
