@@ -16,7 +16,7 @@ class StaffController extends Controller
     {
         //
         // $staffs = Staff::latest()->paginate(5);
-        $staffs = Staff::all();
+        $staffs = Staff::where('position', 'Account Manager')->get();
 
         // $staffs = Staff::idDescending()->get();
 // dd($staffs);

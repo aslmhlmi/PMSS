@@ -8,14 +8,12 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title"> New Proof-of-Concept </h5>
+                    <h5 class="modal-title"> New Deployment </h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                {{-- <form  name="form1" method="post" id="" action=" {{ route('projects.store') }}">
-                    {{ csrf_field() }} --}}
                         <div class="pl-lg-10">
                             <div class="row">
                                 <div class="col-lg-4">
@@ -47,7 +45,7 @@
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="enduser" >End User<span class="small text-danger">*</span></label>
-                                        <input type="text" id="enduser" class="form-control" name="enduser" placeholder="End User" value="#">
+                                        <input type="text" id="enduser" class="form-control" name="enduser" placeholder="End User" value="">
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +53,7 @@
                                 <div class="col-lg-3">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="partner">Partner<span class="small text-danger">*</span></label>
-                                        <input type="text" id="partner" class="form-control" name="partner" placeholder="Partner" value="#">
+                                        <input type="text" id="partner" class="form-control" name="partner" placeholder="Partner" value="">
                                         <!-- <input type="tel" id="anotel" class="form-control" name="anotel" pattern="[0-9]{11}" placeholder="No Tel 0122345678" value=""> -->
                                     </div>
                                 </div>
@@ -78,13 +76,13 @@
                                 <div class="col-lg-3">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="staff_id">Account Manager<span class="small text-danger">*</span></label>
-                                        <input type="text" id="staff_id" class="form-control" name="staff_id" placeholder="Account Manager" value="#">
+                                        <input type="text" id="staff_id" class="form-control" name="staff_id" placeholder="Account Manager" value="">
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="staff_id"> Assign Engineer<span class="small text-danger">*</span></label>
-                                        <input type="text" id="staff_id" class="form-control" name="staff_id" placeholder="Engineer Name" value="#">
+                                        <input type="text" id="staff_id" class="form-control" name="staff_id" placeholder="Engineer Name" value="">
                                     </div>
                                 </div>
 
@@ -104,7 +102,7 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="status">Status<span class="small text-danger">*</span></label>
                                         <select id="status" class="form-control" name="status">
-                                            <option value="#" disabled selected>Choose your option</option>
+                                            <option value="" disabled selected>Choose your option</option>
                                             <option value="Due">	     Due</option>
                                             <option value="Pending">     Pending</option>
                                             <option value="In Progress"> In Progress</option>
@@ -129,7 +127,7 @@
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="startdate">Start Date</label>
-                                        <input type="date" class="form-control" id="startdate" name="startdate" value="#"/>
+                                        <input type="date" class="form-control" id="startdate" name="startdate" value=""/>
                                         <span class="input-group-addon glyphicon glyphicon-calendar" class="input-group-text" id="basic-addon2">
                                         </span>
                                     </div>
@@ -137,7 +135,7 @@
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="enddate">End Date</label>
-                                        <input type="date" class="form-control" id="enddate" name="enddate" value="#"/>
+                                        <input type="date" class="form-control" id="enddate" name="enddate" value=""/>
                                         <span class="input-group-addon glyphicon glyphicon-calendar" class="input-group-text" id="basic-addon2">
                                         </span>
                                     </div>
@@ -145,7 +143,7 @@
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="mdays">M/day</label>
-                                        <input type="text" class="form-control" id="mdays" name="mdays" placeholder="M/day" value="#">
+                                        <input type="text" class="form-control" id="mdays" name="mdays" placeholder="M/day" value="">
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +152,7 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="pocupdate">POC Update</label>
                                         <select id="pocupdate" class="form-control" name="pocupdate">
-                                        <option value="#" disabled selected>Choose your option</option>
+                                        <option value="" disabled selected>Choose your option</option>
                                             <option value="Due">	     Due</option>
                                             <option value="Pending">     Pending</option>
                                             <option value="In Progress"> In Progress</option>
@@ -165,7 +163,7 @@
                                 <div class="col-lg-8">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="remark">Remark</label>
-                                        <input type="text" class="form-control" id="remark" name="remark" placeholder="Remark" value="#">
+                                        <input type="text" class="form-control" id="remark" name="remark" placeholder="Remark" value="">
                                     </div>
                                 </div>
 
@@ -174,10 +172,11 @@
                     {{-- </form> --}}
                 </div>
                 <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <button class="btn btn-primary" type="submit" data-dismiss="modal">Submit</button>
+                        <button class="btn btn-secondary" type="button">Cancel</button>
+                        <button class="btn btn-primary" type="submit" >Submit</button>
                         {{-- <button class="btn btn-primary" type="submit" value="" onclick="event.preventDefault();document.getElementById('create').button();" > Submit</button> --}}
                 </div>
             </div>
         </div>
     </div>
+</form>

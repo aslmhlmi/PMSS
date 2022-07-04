@@ -462,7 +462,7 @@
 
                         <div class="card-body">
 
-                            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
                             <div class="panel-body">
                                 <div class="alert alert-info">

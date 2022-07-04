@@ -16,7 +16,8 @@ class EngineerController extends Controller
     {
         //
         // $staffs = Staff::latest()->paginate(5);
-        $staffs = Staff::all();
+        $staffs = Staff::where('position', 'Engineer')->get();
+
 
         return view('ProjectBy.Engineer.engineer',compact('staffs'));
     }
@@ -42,6 +43,7 @@ class EngineerController extends Controller
     public function store(Request $request)
     {
         //
+        dd($request);
         $request->validate([
 
             'name'       => 'required',

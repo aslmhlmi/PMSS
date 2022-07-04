@@ -94,6 +94,9 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request);
+
+        // dd('test');
         $request->validate([
             'id'            => 'required',
             'team'          => 'required',
@@ -115,7 +118,9 @@ class ProjectController extends Controller
             'remark'        => 'required',
         ]);
 
+
         Project::create($request->all());
+
 
         return redirect()->route('projects.index')
                         ->with('success','Project Created Successfully!.');
