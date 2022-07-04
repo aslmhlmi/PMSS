@@ -79,12 +79,12 @@
                                         <input type="text" id="staff_id" class="form-control" name="staff_id" placeholder="Account Manager" value="">
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
+                                {{-- <div class="col-lg-3">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="staff_id"> Assign Engineer<span class="small text-danger">*</span></label>
                                         <input type="text" id="staff_id" class="form-control" name="staff_id" placeholder="Engineer Name" value="">
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
                             <div class="row">
